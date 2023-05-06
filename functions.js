@@ -11,8 +11,8 @@ function search_results() {
             // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
             document.getElementById('display').innerHTML  += `
             <div>
+                <p><strong>${job['Acronym']}</strong></p>
                 <p>${job['Value']}</p>
-                <p>${job['Acronym']}</p>
             </div>
             `;
 
