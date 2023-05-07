@@ -2,26 +2,35 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
     </head>
     <body>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
         <div class="top_bar">
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        <div class="spaced_out"></div>
         <!-- ###moved to css file to include in all html files###
             
         <style>
             p {text-align: center; color: lightblue;}
         </style> -->
-        <div class="job-title">Looking for jobs in... </div>
-        <div class="search-text">
-            <input type="text" id="search_input" placeholder="Zipcode, City, State..." style="text-align: center">
+        <div id="search">
+            <div class="spaced_out"></div>
+            <div class="job-title">Looking for jobs in... </div>
+            <div class="search-text">
+                <input type="text" id="search_input" placeholder="Zipcode, City, State..." style="text-align: center">
+            </div>
+            <div class="search-button">
+                <button onclick="search_results()">Search</button>
+            </div>
         </div>
-        <div class="search-button">
-            <button onclick="search_results()">Search</button>
-        </div>
-
+        <div id="jobs-in" class="jobs-location"></div>
+        <div id="map"></div>
         <div id="display"> </div>
         <script src="functions.js"></script>
     </body>
