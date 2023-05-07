@@ -20,3 +20,17 @@ function search_results() {
         // document.get
     })
 }
+
+const nameInput = document.getElementById("search_input");
+
+nameInput.addEventListener("focus", function() {
+  if (this.placeholder == "Zipcode, City, State...") {
+    this.placeholder = "";
+  }
+});
+
+nameInput.addEventListener("blur", function() {
+  if (this.placeholder == "") {
+    this.placeholder = "Zipcode, City, State...";
+  }
+});

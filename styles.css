@@ -1,28 +1,79 @@
+.top_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202020e1;
+    display: flex;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+.spaced_out {
+    height: 200px;
+}
+
 .job-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
+    padding-bottom: 1em;
     text-align: center;
-    margin-bottom: 20px;
   }
   
   .search-button {
+    padding-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .search-text {
+    font-weight: 300;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .search-button button {
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #008CBA;
-    color: white;
+    background-color: #0073ff;
     border: none;
-    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 25px;
+  }
+
+  a {
+    font-size: .8em;
+    padding: 0.5em 2em 0.5em 2em;
+    text-decoration: none; /* removes the default underline */
+    color: rgb(246, 246, 246); /* sets the color of the link */
+  }
+
+  input {
+    font-weight: 300;
+    font-size: 18px;
+    width: 500px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  p {
+    font-weight: 300;
+    padding-left: 10em;
+    padding-right: 10em;
+    text-align: center;
+    color: rgb(31, 31, 31);
   }

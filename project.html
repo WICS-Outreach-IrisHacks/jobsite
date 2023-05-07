@@ -4,17 +4,22 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
+        <div class="top_bar">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="spaced_out"></div>
+        <!-- ###moved to css file to include in all html files###
+            
         <style>
-            p {text-align: center;}
-        </style>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+            p {text-align: center; color: lightblue;}
+        </style> -->
         <div class="job-title">Looking for jobs in... </div>
         <div class="search-text">
-            <input type="text" placeholder="City, Zipcode, State...">
+            <input type="text" id="search_input" placeholder="Zipcode, City, State..." style="text-align: center">
         </div>
         <div class="search-button">
-            <button onclick="search_results()">Search!</button>
+            <button onclick="search_results()">Search</button>
         </div>
 
         <div id="display"> </div>
